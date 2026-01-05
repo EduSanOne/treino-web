@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <h1>EddySans</h1>
+                <p>The Best products for you</p>
+            </a>
+        </div>
+        <span id="menu" class="material-symbols-outlined" onclick="abrirMenu()">menu</span> 
+        <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+        <section id="tela-de-login">
+            <div id="img-log"></div>
+            <div id="form">
+                <h2>Login</h2>
+                <p>Welcome back. Log in or create an account to access and configure your environment.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span> 
+                        <input type="email" name="email" id="iemail" placeholder="Your email...">
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span> 
+                        <input type="password" name="pass" id="ipass" placeholder="Your password...">
+                    </div>
+                    <div class="campo">
+                        <input type="button" value="Login">
+             
+                    </div>
+                    <div class="campo">
+                        <a href="#" id="forgpas">I forgot my password</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Project maked by Eduardo Santos
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
