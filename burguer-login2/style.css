@@ -101,7 +101,7 @@
     }
 
     section {
-        width: 50%;
+        width: 80%;
         box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.281);
         padding: 20px;
         border-radius: 10px;
@@ -124,7 +124,7 @@
 
 /*---------------- CONFIG PADRÃO E TELA ACCOUNT -------------*/
 
-    #tela-de-login {
+    section#tela-de-login {
         height: 500px;
         width: 300px;
         padding: 0;
@@ -235,8 +235,14 @@
         border-radius: 10px;
     }
 
+    /*------- SEÇÃO --------*/
+
+    section {
+        width: 50%;
+    }
+
     /* TELA DE LOGIN */
-    #tela-de-login {
+    section#tela-de-login {
         max-width: 800px;
         width: 80vw;
         height: 300px;
