@@ -1,174 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-/* CONFIG PADRÃO E TELA INDEX */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+/*---------- CONFIG PADRÃO E TELA INDEX ---------------*/
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
-header {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+    :root {
+        --cor-chave: #119c6e;
+    }
 
-#logo {
-    font-size: 1.3rem;
-    padding: 15px;
-}
+    body {
+        height: 100vh;
+    }
 
-#logo a{
-    text-decoration: none;
-    color: #119c6e;
-}
+    header {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-#logo h1{
-    font-family: "Audiowide";
-}
+/*----------   LOGO  ----------------*/
+    div#logo {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
 
-#logo p {
-    justify-self: center;
-    font-size: 1rem;
-}
+    div#logo a{
+        text-decoration: none;
+        color: #119c6e;
+    }
 
-#menu {
-    color: #119c6e;
-    text-align: center;
-    margin-top: 5px;
-    padding: 0.2rem;
-    font-size: 2rem;
-    width: 100%;
-    transition: background-color 0.5s;
-}
+    div#logo h1{
+        font-family: "Audiowide";
+    }
 
-#menu:hover {
-    background-color: white;
-}
+    div#logo p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        justify-self: center;
+        line-height: 10px;
+        font-size: 1rem;
+    }
 
-#navbar {
-    display: none;
-    width: 100%;
-    background-color: black;
-}
+/*------------ BOTÃO DE OPÇÕES E NAVBAR -----------------------*/
+    #menu {
+        color: #119c6e;
+        text-align: center;
+        margin-top: 5px;
+        padding: 0.2rem;
+        font-size: 2rem;
+        width: 100%;
+        transition: background-color 0.5s;
+    }
 
-#navbar ul {
-    list-style: none;
-}
+    #menu:hover {
+        background-color: white;
+    }
 
-#navbar ul li {
-    align-self: center;
-    width: 100%;
-    padding: 0.6rem;
-}
+    #navbar {
+        display: none;
+        width: 100%;
+        background-color: black;
+    }
 
-#navbar ul li:hover {
-    background-color: white;
-    transition: 0.5s;
-}
+    #navbar ul {
+        list-style: none;
+    }
 
-#navbar ul li a {
-    text-decoration: none;
-    color: #119c6e;
-    display: block;
-    margin: auto;
-    text-align: center;
-}
+    #navbar ul li {
+        align-self: center;
+        width: 100%;
+        padding: 0.6rem;
+    }
 
-main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: center;
-}
+    #navbar ul li:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
 
-section {
-    width: 50%;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
-    padding: 20px;
-    border-radius: 10px;
-}
+    #navbar ul li a {
+        text-decoration: none;
+        color: #119c6e;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+/*------------ CONTEUDO PRINCIPAL --------------*/
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+    }
 
-footer {
-    display: block;
-    text-align: center;
-    background-color: black;
-    color: #119c6e;
-    padding: 10px;
-    font-size: 1rem;
-}
+    section {
+        width: 50%;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.281);
+        padding: 20px;
+        border-radius: 10px;
+    }
 
-/* CONFIG PADRÃO E TELA ACCOUNT */
+    section h1 {
+        font-size: 1.5rem;
+    }
 
-#tela-de-login {
-    height: 500px;
-    width: 300px;
-    padding: 0;
-    overflow: hidden;
-}
+/*------------ FOOTER --------------*/
 
-#img-log {
-    background-image: url(imagens/people-buying-p.jpg);
-    height: 200px;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
+    footer {
+        display: block;
+        text-align: center;
+        background-color: black;
+        color: #119c6e;
+        padding: 10px;
+        font-size: 1rem;
+    }
 
-#form {
-    padding: 10px;
-}
+/*---------------- CONFIG PADRÃO E TELA ACCOUNT -------------*/
 
-#form h2 {
-    text-align: center;
-}
+    #tela-de-login {
+        height: 500px;
+        width: 300px;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+    }
 
-.campo {
-    width: 100%;
-    height: 40px;
-    border: 1px solid black;
-    position: relative;
-    border-radius: 10px;
-    margin: 5px;
-}
+    #img-log {
+        background-image: url(imagens/people-buying-p.jpg);
+        height: 200px;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
 
-.campo span {
-    padding: 4px;
-    width: 40px;
-    font-size: 2rem;
-}
+    #form {
+        padding: 10px;
+        color: white;
+    }
 
-.campo input {
-    width: calc(100% - 40px);
-    height: 38px;
-    position: absolute;
-    border-radius: 10px;
-}
+    #form h2 {
+        text-align: center;
+    }
 
-.campo input[type='button']{
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-}
+    #form p {
+        text-align: justify;
+    }
 
-#forgpas {
-    text-decoration: none;
-    color: black;
-    display: block;
-    text-align: center;
-    padding-top: 5px;
-}
+    .campo {
+        width: 100%;
+        height: 40px;
+        border: 1px solid var(--cor-chave);
+        position: relative;
+        border-radius: 10px;
+        margin: 5px;
+        background-color: black;
+    }
+
+    .campo span {
+        padding: 4px;
+        width: 40px;
+        font-size: 2rem;
+        color: var(--cor-chave);
+    }
+
+    .campo input {
+        width: calc(100% - 40px);
+        height: 38px;
+        position: absolute;
+        border-radius: 10px;
+        padding-left: 10px;
+        color:var(--cor-chave);
+    }
+
+    .campo input[type='submit']{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        background-color: var(--cor-chave);
+        color: black;
+    }
+
+    #forgpas {
+        text-decoration: none;
+        background-color: #ffffff;
+        color: black;
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        height: 40px;
+        border-radius: 10px;
+        border: 2px solid var(--cor-chave);
+    } 
+
+    input::placeholder {
+        padding-left: 5px;
+    }
 
 
 
-/* MEDIA QUERY PARA TELAS MAIORES QUE CELULARES */
+
+/*----------- MEDIA QUERY PARA TELAS MAIORES QUE CELULARES ----------------*/
 @media screen and (min-width: 768px) {
     header {
         display: flex;
@@ -195,4 +234,36 @@ footer {
         margin-right: 10px;
         border-radius: 10px;
     }
+
+    /* TELA DE LOGIN */
+    #tela-de-login {
+        max-width: 800px;
+        width: 80vw;
+        height: 300px;
+    }
+
+    div#img-log {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#form {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#form h2 {
+        font-size: 1.5rem;
+    }
+
+    div#form p {
+        padding: 5px;
+    }
+
+    div#form div.campo {
+        margin: 5px 0;
+    }
+
 }
